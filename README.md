@@ -8,3 +8,7 @@ cable and turning the board on and finding the assigned COM port number by looki
 the device manager. On the terminal, we have set the baud rate to 9600 bps;(which will be changed later depeding on the pixel bit amount) the COM port
 to the one Basys3 board connected; parity bit to “None”; data bits to eight; and
 stop bits to one. The clock has been set to 10KHz , which will be later set as 25MHz to meet our applocation specifications.
+
+ A general representation of the Uart protocol has been given below
+ 
+ ![image](https://github.com/user-attachments/assets/37a8d59f-9335-459a-aa46-c8e57c9acb46)
