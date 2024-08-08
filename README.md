@@ -7,6 +7,7 @@ This project marks our first attempt at implementing a basic VGA controller in V
 - **vga_sync**: Responsible for generating VGA timing signals (`hsync`, `vsync`), pixel coordinates, and a video-on signal.
 - **vga_test**: A simple test module that outputs RGB colors based on switch inputs using the `vga_sync` module.
 
+
 ## Files
 -**vga_test.v**: Contains both the `vga_sync` module and the `vga_test` module.
 
@@ -31,8 +32,14 @@ Each channel's value can range from `0000` to `1111`, corresponding to a decimal
 - `1111 1111 1111`: White (maximum intensity for all channels).
 
 In the `vga_test` module, the 12-bit input `sw` determines the color output on the VGA monitor. The color is displayed when `video_on` is high, and the pixel is turned off (black) when `video_on` is low.
+## VGA Signal Timing Reference
+
+For a visual reference of VGA signal timing, you can refer to the image below:
+<p align="center">
+           <img src="https://github.com/user-attachments/assets/63da6f1a-5a8c-481f-99f8-092cda030508" alt="VGA Signal Timing" width="600"/>
+
+</p>
 
 ## Purpose
 
 This project was created as a foundational step to understand VGA signal timing and basic video output functionality on FPGA.
-
